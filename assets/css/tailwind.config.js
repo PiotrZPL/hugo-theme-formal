@@ -1,4 +1,5 @@
 const themeDir = __dirname + "/../../";
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
@@ -18,6 +19,33 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        amber: colors.amber,
+        black: colors.black,
+        blue: colors.blue,
+        blueGray: colors.blueGray,
+        coolGray: colors.coolGray,
+        cyan: colors.cyan,
+        emerald: colors.emerald,
+        fuchsia: colors.fuchsia,
+        gray: colors.gray,
+        green: colors.green,
+        indigo: colors.indigo,
+        lightBlue: colors.lightBlue,
+        lime: colors.lime,
+        orange: colors.orange,
+        pink: colors.pink,
+        purple: colors.purple,
+        red: colors.red,
+        rose: colors.rose,
+        sky: colors.sky,
+        teal: colors.teal,
+        trueGray: colors.trueGray,
+        violet: colors.violet,
+        warmGray: colors.warmGray,
+        white: colors.white,
+        yellow: colors.yellow,
+      },
       typography: (theme) => ({
         dark: {
           css: [
