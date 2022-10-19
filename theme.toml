@@ -1,13 +1,13 @@
-name = "Blist"
-license = "MIT"
-licenselink = "https://github.com/apvarun/blist-hugo-theme/blob/master/LICENSE"
-description = "Blist is a clean and fast blog theme for your Hugo site."
-homepage = "https://github.com/apvarun/blist"
+name = "Formal"
+license = "MPL-2.0"
+licenselink = "https://github.com/PiotrZPL/hugo-theme-formal/blob/main/LICENSE"
+description = "Formal is a simple and elegant theme with lots of features."
+homepage = "https://github.com/PiotrZPL/hugo-theme-formal"
 demosite = "https://blist.vercel.app"
-tags = ["Hugo", "theme", "blog", "modern", "responsive"]
+tags = ["Hugo", "theme", "blog", "modern", "responsive", "formal", "elegant", "simple"]
 features = ["clean", "gallery", "minimal", "minimalist", "mobile", "personal", "responsive", "simple", "tailwind", "blog", "white"]
 min_version = "0.82.1"
 
 [author]
-  name = "Varun A P"
-  homepage = "https://apvarun.com"
+  name = "Piotr Lange"
+  homepage = "https://piotrlange.de/"
