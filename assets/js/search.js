@@ -22,6 +22,7 @@ function closeSearch() {
   document.activeElement.blur(); // remove focus from search box 
   searchVisible = false; // search not visible
   searchResultsHeading.classList.add('hidden');
+  mobileMenu.classList.toggle('hidden');
 }
 
 function openSearch() {
