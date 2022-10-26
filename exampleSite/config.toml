@@ -1,7 +1,7 @@
 baseurl = "https://blist.vercel.app"
 metaDataFormat = "yaml"
 title = "Blist Multilingual Theme"
-theme = "blist"
+theme = "hugo-theme-formal"
 
 DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
@@ -104,7 +104,7 @@ DefaultContentLanguageInSubdir = true
   # Color for the intro details and social links block, not applicable for dark mode
   # Supported values: Any color from TailwindCSS default colors
   # Reference: https://tailwindcss.com/docs/customizing-colors
-  ascentColor = "bg-blue-100"
+  ascentColor = "bg-emerald-500"
 
   # The page bundle that is shown on the front page
   frontBundle = "blog"
@@ -129,6 +129,9 @@ DefaultContentLanguageInSubdir = true
   reddit = "https://reddit.com/"
   dribbble = "https://dribbble.com/"
   stackoverflow = "https://stackoverflow.com/"
+  youtube = "#"
+  instagram = "#"
+  facebook = "#"
 
 [[menu.main]]
   name = "About"
