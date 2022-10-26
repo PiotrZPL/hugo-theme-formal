@@ -1,6 +1,6 @@
 baseurl = "https://blist.vercel.app"
 metaDataFormat = "yaml"
-title = "Blist Multilingual Theme"
+title = "Formal Hugo theme"
 theme = "hugo-theme-formal"
 
 DefaultContentLanguage = "en"
@@ -11,9 +11,9 @@ DefaultContentLanguageInSubdir = true
     weight = 1
     languageName = "English"
     [languages.en.params]
-      introTitle = "Hey! I'm Katheryn Fox"
-      introSubtitle = "26 y/o junior developer who enjoys social card games, blogging and painting"
-      introPhoto = "/picture.jpg"
+      introTitle = "I'm Christopher Green"
+      introSubtitle = "47 y/o senior developer interested in geography and history"
+      introPhoto = "/profile.webp"
       logo = "/blist-logo.png"
     [[languages.en.menu.main]]
         name = "Blog"
@@ -39,12 +39,11 @@ DefaultContentLanguageInSubdir = true
     contentDir = "content/de" # Deutsch
     weight = 2
     languageName = "Deutsch"
-    title = "Blist (mehrsprachig)"
-    description = "Modernes Blog-Theme für Ihre Hugo-Site."
+    title = "Formal Hugo theme"
     [languages.de.params]
-      introTitle = "Hallo, ich bin Katheryn Fox"
-      introSubtitle = "26-jährige Junior-Entwicklerin, die Spaß an sozialen Kartenspielen, Bloggen und Malen hat"
-      introPhoto = "/picture.jpg"
+      introTitle = "Ich bin Christopher Green"
+      introSubtitle = "47-jähriger Senior-Entwickler mit Interesse an Geografie und Geschichte"
+      introPhoto = "/profile.webp"
       logo = "/blist-logo-de.png"
     [[languages.de.menu.main]]
         name = "Blog"
@@ -61,34 +60,30 @@ DefaultContentLanguageInSubdir = true
         url = "tags"
         weight = 3
         
-  [languages.fr]
-    contentDir = "content/fr" #French
-    weight = 1
-    languageName = "Français"
-    [languages.fr.params]
-      introTitle = "Salut! Je suis Katheryn Fox"
-      introSubtitle = "Développeuse junior de 26 ans qui adore les jeux de société, le blogging et la peinture"
-      introPhoto = "/picture.jpg"
+  [languages.pl]
+    contentDir = "content/pl" # Polish
+    weight = 3
+    languageName = "Polski"
+    title = "Formal Hugo theme"
+    [languages.pl.params]
+      introTitle = "Nazywam się Christopher Green"
+      introSubtitle = "47-letni senior-developer interesujący się geografią i historią"
+      introPhoto = "/profile.webp"
       logo = "/blist-logo.png"
-    [[languages.fr.menu.main]]
+    [[languages.pl.menu.main]]
         name = "Blog"
         url = "blog"
         weight = 1
 
-    [[languages.fr.menu.main]]
-        name = "À propos"
+    [[languages.pl.menu.main]]
+        name = "O mnie"
         url = "page/about/"
         weight = 2
 
-    [[languages.fr.menu.main]]
-        name = "Tags"
+    [[languages.pl.menu.main]]
+        name = "Tagi"
         url = "tags"
         weight = 3
-        
-  [languages.dy]
-    contentDir = "content/dy" #Example language
-    weight = 3
-    languageName = "Test Language"
 
 [params]
   # Enable the darkmode toggle in header
@@ -98,13 +93,13 @@ DefaultContentLanguageInSubdir = true
   enableSearch = true
 
   # Custom copyright - optional
-  copyright = "Copyright © 2021 - Katheryn Fox · All rights reserved"
+  copyright = "Copyright © 2022 - Christopher Green · All rights reserved"
   favicon = "/favicon.svg"
 
   # Color for the intro details and social links block, not applicable for dark mode
   # Supported values: Any color from TailwindCSS default colors
   # Reference: https://tailwindcss.com/docs/customizing-colors
-  ascentColor = "bg-emerald-500"
+  ascentColor = "bg-emerald-300"
 
   # The page bundle that is shown on the front page
   frontBundle = "blog"
@@ -121,17 +116,18 @@ DefaultContentLanguageInSubdir = true
   # Global params common for both languages
   title = "Follow me"
   description = "I work on everything coding and tweet developer memes"
+  # Up to 5-6 profiles work well on mobile devices
   twitter = "https://twitter.com/"
   linkedin = "https://linkedin.com/in/"
-  xing = "https://www.xing.com/profile/"
+  #xing = "https://www.xing.com/profile/"
   github = "https://github.com/"
-  medium = "https://medium.com/"
+  #medium = "https://medium.com/"
   reddit = "https://reddit.com/"
-  dribbble = "https://dribbble.com/"
+  #dribbble = "https://dribbble.com/"
   stackoverflow = "https://stackoverflow.com/"
-  youtube = "#"
-  instagram = "#"
-  facebook = "#"
+  youtube = "https://www.youtube.com/c/"
+  #instagram = "https://www.instagram.com/"
+  #facebook = "https://www.facebook.com/"
 
 [[menu.main]]
   name = "About"
