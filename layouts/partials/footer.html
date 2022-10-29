@@ -1,7 +1,7 @@
 <footer class="container p-6 mx-auto flex justify-between items-center">
   <span class="text-sm font-light">
     {{ if (isset .Site.Params "copyright") }}
-    {{ .Site.Params.copyright | safeHTML }}
+    {{ .Site.Params.copyright | safeHTML }} · Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/PiotrZPL/hugo-theme-formal">Formal</a>
     {{ else }}
     {{ dateFormat "2006" now }} © {{ .Site.Title }}
     {{ end }}
