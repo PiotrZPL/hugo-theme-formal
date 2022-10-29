@@ -1,7 +1,7 @@
 ---
-author: Katheryn Fox
+author: Christopher Green
 title: About Me
-date: 2021-07-15
+date: 2022-10-24
 description:
 keywords: ["about-us", "about-hugo", "contact"]
 type: about
