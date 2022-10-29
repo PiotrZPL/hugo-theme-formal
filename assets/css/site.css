@@ -20,6 +20,7 @@ body {
       format("truetype"),
     /* Safari, Android, iOS */ url("/fonts/inter-v3-latin-300.svg#Inter")
       format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* inter-500 - latin */
 @font-face {
@@ -36,6 +37,7 @@ body {
       format("truetype"),
     /* Safari, Android, iOS */ url("/fonts/inter-v3-latin-500.svg#Inter")
       format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* inter-700 - latin */
 @font-face {
@@ -52,6 +54,7 @@ body {
       format("truetype"),
     /* Safari, Android, iOS */ url("/fonts/inter-v3-latin-700.svg#Inter")
       format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* cyrillic-ext */
@@ -61,6 +64,7 @@ body {
   font-weight: 400;
   src: url("/fonts/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDr4fIA9c.woff2") format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  font-display: swap;
 }
 /* cyrillic */
 @font-face {
