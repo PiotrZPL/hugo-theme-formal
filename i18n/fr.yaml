@@ -6,7 +6,7 @@
 - id: translationsLabel
   translation: "Autres langues: "
 - id: translationsSeparator
-  translation: ", "
+  translation: ",&nbsp;"
 - id: readMore
   translation: "Lire plus"
 - id: morePosts
