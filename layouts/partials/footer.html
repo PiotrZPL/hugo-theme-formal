@@ -21,23 +21,6 @@
 
 {{ template "_internal/google_analytics.html" . }}
 
-{{ if ge (len .Site.Languages) 3 }}
-<script>
-  const languageMenuButton = document.querySelector('.language-switcher');
-  const languageDropdown = document.querySelector('.language-dropdown');
-  languageMenuButton.addEventListener('click', (evt) => {
-    evt.preventDefault()
-    if (languageDropdown.classList.contains('hidden')) {
-      languageDropdown.classList.remove('hidden')
-      languageDropdown.classList.add('flex')
-    } else {
-      languageDropdown.classList.add('hidden');
-      languageDropdown.classList.remove('flex');
-    }
-  })
-</script>
-{{ end }}
-
 {{ if .Site.Params.darkModeToggle }}
 <script>
   // On page load or when changing themes
@@ -68,14 +51,46 @@
 </script>
 {{ end }}
 
-<script>
-  const mobileMenuButton = document.querySelector('.mobile-menu-button')
+<script>const mobileMenuButton = document.querySelector('.mobile-menu-button')
   const mobileMenu = document.querySelector('.mobile-menu')
   function toggleMenu() {
-    mobileMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('flex');
+    if (mobileMenu.clientHeight === 0) {
+      mobileMenu.style.paddingTop = '20px'
+      // navbar.style.paddingBottom = '20px'
+      mobileMenu.style.height = `${parseInt(mobileMenu.scrollHeight + 30)}px`
+      mobileMenu.classList.add("pb-6")
+      return
+      // console.log("1")
+    }
+    mobileMenu.classList.add("overflow-hidden")
+    mobileMenu.style.height = '0px'
+    mobileMenu.style.paddingTop = '0px'
+    mobileMenu.classList.remove("pb-6")
   }
   if(mobileMenu && mobileMenuButton){
     mobileMenuButton.addEventListener('click', toggleMenu)
-  }
+  }</script>
+
+<script>function onWindowResize() {
+  mobileMenu.style.height = "";
+  mobileMenu.style.paddingTop = "";
+}</script>
+
+{{ if ge (len .Site.Languages) 3 }}
+<script>
+  const languageMenuButton = document.querySelector('.language-switcher');
+  const languageDropdown = document.querySelector('.language-dropdown');
+  languageMenuButton.addEventListener('click', (evt) => {
+    evt.preventDefault()
+    if (languageDropdown.classList.contains('hidden')) {
+      languageDropdown.classList.remove('hidden')
+      languageDropdown.classList.add('flex')
+      mobileMenu.classList.remove("overflow-hidden")
+    } else {
+      languageDropdown.classList.add('hidden');
+      languageDropdown.classList.remove('flex');
+      mobileMenu.classList.add("overflow-hidden")
+    }
+  })
 </script>
+{{ end }}
